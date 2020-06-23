@@ -1,0 +1,99 @@
+<html>
+<head>
+    <script src="jquery-3.5.0.js"></script>
+    <script>
+        var user;
+        var currentIndex = 0;
+        function getUser(){
+            $.get("getuser.php",{},function(data, status){user = data;})
+        }
+
+
+        $(document).ready(function(){
+            getUser();
+            $("#add").click(function(){
+                var url = $("#url").val();
+                var desc = $("#desc").val();
+                var cat = $("#cat").val();
+                $.get("addurl.php",{method: "add", username: user, url: url, desc: desc, cat: cat
+                },function(data, status){ alert("Added")})
+            });
+
+            $("#remove").click(function(){
+                var url = $("#url").val();
+                var desc = $("#desc").val();
+                var cat = $("#cat").val();
+                $.get("addurl.php",{method: "remove", username: user, url: url, desc: desc, cat: cat
+                },function(data, status){ alert("Removed")})
+            });
+
+            $("#update").click(function(){
+                var url = $("#url").val();
+                var desc = $("#desc").val();
+                var cat = $("#cat").val();
+                $.get("addurl.php",{method: "update", username: user, url: url, desc: desc, cat: cat
+                },function(data, status){ alert("Updated")})
+            });
+
+            $("#next").click(function(){
+                var categ = $("#cat").val();
+                $.get("show.php",{username: user, start: currentIndex+4, end: currentIndex+8, cat: categ },function(data, status){
+                    currentIndex += 4;
+                    $("#content").html(data);
+                })
+            });
+
+            $("#prev").click(function(){
+                var categ = $("#cat").val();
+                $.get("show.php",{username: user, start: currentIndex-4, end: currentIndex, cat: categ},function(data, status){
+                    currentIndex -= 4;
+                    currentIndex = Math.max(0,currentIndex);
+                    $("#content").html(data);
+                })
+            });
+
+            $("#show").click(function(){
+                var categ = $("#cat").val();
+                $.ajax({
+                    url: "show.php",
+                    type: "get",
+                    data: {
+                        username: user,
+                        start: 0,
+                        end: 4,
+                        cat: categ
+                    },
+                    success: function(data) {
+                        currentIndex = 0;
+
+                        $("#content").html(data);
+                    }
+                })
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<form>
+    <br>Url: <input id ="url" type="text"/>
+    <br>Description: <input  id= "desc" type="text"/>
+    <br>Category: <input id = "cat" type="text"/>
+    <br>
+    <input type="button" id="add" value="Add"/>
+    <input type="button" id="remove" value="Remove"/>
+    <input type="button" id="update" value="Update"/>
+    <input type="button" id="next" value="Next Page"/>
+    <input type="button" id="prev" value="Previous Page"/>
+    <input type="button" id="show" value="Show"/>
+</form>
+
+<div id="content">
+
+</div>
+
+
+</body>
+
+</html>

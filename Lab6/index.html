@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script src="jquery-3.5.0.js"></script>
+    <script>
+        var score = 0;
+        var done = false;
+        function f(){
+            if (!done){
+                var windowWidth = $(window).width();
+                var windowHeight = $(document).height();
+                var nrOfImages = $("img").length;
+                var positionX = 0, positionY = 0;
+                var i = Math.floor((Math.random() * nrOfImages) - 1);
+                positionX = Math.floor((Math.random() * (windowWidth - 100)));
+                positionY = Math.floor((Math.random() * (windowHeight - 200)) + 100);
+
+                $("img").eq(i).css("top", positionY);
+                $("img").eq(i).css("left", positionX);
+                $("img").eq(i).show(2000, function (i) {
+                    $("img:visible").hide(2000, function () {
+                        f();
+                    });
+                });
+            }
+        }
+
+        $(document).ready(function(){
+            $("img").css("position","absolute");
+            $("img").hide();
+
+            $("#button").click(function (){ score = 0; $("#score").text(score); f();});
+
+            $("img").click(function(){
+                score +=1;
+                $("#score").text(score);
+                if(score === 10) {
+                    done = true;
+                    alert("You won!");
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+<div id="button" style="border:1px;background-color:black; color:white; width:200px; height:50px; text-align: center;"> Click to start the game</div>
+<p id="score" style="position:absolute; right:10px; top:10px;">0</p>
+<img src="1.jpg" width="100px"/>
+<img src="2.jpg" width="100px"/>
+<img src="3.jpg" width="100px"/>
+<img src="4.jpg" width="100px"/>
+<img src="5.jpg" width="100px"/>
+<img src="6.jpg" width="100px"/>
+<img src="7.jpg" width="100px"/>
+<img src="8.jpg" width="100px"/>
+<img src="9.jpg" width="100px"/>
+
+</body>
+
+</html>

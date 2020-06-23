@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+.main {
+	height:600px;
+	widht:600px;
+}
+.child1 {
+	background-color:yellow;
+	height:100px;
+	width:100px;
+}
+.child2 {
+	background-color:red;
+	height:100px;
+	width:100px;
+}
+.thumbnail{
+	background-color:blue;
+	height:200px;
+	width:200px;
+}
+.child1:hover ~ .thumbnail{
+	background-color:green;
+}
+.child2:hover ~ .thumbnail{
+	background-color:green;
+}
+
+
+</style>
+</head>
+<body>
+<div class="main">
+	<div class = "child1"></div>
+	<div class = "child2"></div>
+	<div class = "thumbnail"></div>
+</div>
+
+
+</body>
+</html>

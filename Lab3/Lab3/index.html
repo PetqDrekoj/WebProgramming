@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="icon.png"> <!-- icon for top near title -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Yahoo</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="subheader1">
+        <div class="subheader1wrapper">
+            <img id="yahoo_img" src="yahoo.png"/>
+            <div class="textAndSubmit">
+                <div class="wraptextsubmit">
+                    <input type="text" id="textinput"/>
+                    <button type="submit" id="buton_cautare">
+                        <svg width="24" style="fill:#fff;stroke:#fff;stroke-width:0;vertical-align:bottom" height="24"
+                             viewBox="0 0 24 24" data-icon="search">
+                            <path d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <ul id="lista1">
+                <li id="autentificare_li">Autentificare</li>
+                <li id="mail_li">
+                    <svg width="30" height="30" viewBox="0 0 512 512">
+                        <path d="M460.586 91.31H51.504c-10.738 0-19.46 8.72-19.46 19.477v40.088l224 104.03 224-104.03v-40.088c0-10.757-8.702-19.478-19.458-19.478M32.046 193.426V402.96c0 10.758 8.72 19.48 19.458 19.48h409.082c10.756 0 19.46-8.722 19.46-19.48V193.428l-224 102.327-224-102.327z"></path>
+                    </svg>
+                    <span style="float:right;padding-left:8px;padding-top:7.7%;font-size:14px;">Mail</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="subHeader2">
+        <ul id="lista2">
+            <li id="mail_li" style="margin-left:0px;padding:0;">
+                <svg width="28" height="28" viewBox="0 0 512 512">
+                    <path d="M460.586 91.31H51.504c-10.738 0-19.46 8.72-19.46 19.477v40.088l224 104.03 224-104.03v-40.088c0-10.757-8.702-19.478-19.458-19.478M32.046 193.426V402.96c0 10.758 8.72 19.48 19.458 19.48h409.082c10.756 0 19.46-8.722 19.46-19.48V193.428l-224 102.327-224-102.327z"></path>
+                </svg>
+                <span style="float:right;padding-left:8px;font-size:14px;">Mail</span>
+            </li>
+            <li style="margin-left: 21px;">Stiri</li>
+            <li style="margin-left: 21px;">Sporturi</li>
+            <li style="margin-left: 21px;">Raspunsuri</li>
+            <li style="margin-left: 21px;">Mobile</li>
+            <li style="margin-left: 21px;">Vreme</li>
+        </ul>
+    </div>
+</header>
+
+<article class="main">
+    <div class="content">
+        <div class="subcontent1">
+            <ul id="lista3">
+                <li>
+                    <div class="article">
+                        <img src="1.jpg">
+                        <span id="subheading">Gazeta Sporturilor</span>
+                        <span id="heading">Ion Țiriac, nemulțumit de cadoul Simonei Halep: „Nu e mai mult de 100 de dolari. O aștept la colț!”</span>
+                        <span id="desc">Ion Țiriac (80 de ani), președintele Federației Române de Tenis, a dezvăluit ce cadou a primit din partea Simonei Halep (28 de ani, 2 WTA), după ce sportiva noastră a pierdut un pariu cu omul de afaceri.</span>
+                        <svg class="comment-count:h_Fill($streamHoverClass) Pe(n) Cur(p)" width="20"
+                             style="fill:#6E7780;stroke:#6E7780;stroke-width:0;vertical-align:bottom" height="20"
+                             viewBox="0 0 16 16" data-icon="comments">
+                            <path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                        <img src="2.jpg">
+                        <span id="subheading">Republica</span>
+                        <span id="heading">„Adevărul despre coronavirus” vine pe WhatsApp și mulți dintre bătrânii noștri se infectează cu el</span>
+                        <span id="desc">Îmi trimite mătușa mea recent pe WhatsApp un text primit din altă parte în care nu știu ce medic renumit anunță că toată povestea asta cu pandemia e o mascaradă, că Statele Unite au plănuit asta de acum câteva luni, că au împrăștiat un gaz în aer care afecteaza plămânii și că pandemia se va termina în aprilie.</span>
+                        <svg class="comment-count:h_Fill($streamHoverClass) Pe(n) Cur(p)" width="20"
+                             style="fill:#6E7780;stroke:#6E7780;stroke-width:0;vertical-align:bottom" height="20"
+                             viewBox="0 0 16 16" data-icon="comments">
+                            <path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                        <img src="3.jpg">
+                        <span id="subheading">Republica</span>
+                        <span id="heading">Vlăguită de coronavirus, Italia riscă o boală mai gravă. Şi, odată cu ea, se va infecta întreaga Europă</span>
+                        <span id="desc">Scrisesem zilele trecute de lipsa de empatie şi acţiune a instituţiilor europene în faţa pandemiei care pusese la pământ sistemul sanitar performant al Lombardiei, dar şi moralul italienilor, fără deosebire de regiunea în care locuiau.</span>
+                        <svg class="comment-count:h_Fill($streamHoverClass) Pe(n) Cur(p)" width="20"
+                             style="fill:#6E7780;stroke:#6E7780;stroke-width:0;vertical-align:bottom" height="20"
+                             viewBox="0 0 16 16" data-icon="comments">
+                            <path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                        <img src="4.jpg">
+                        <span id="subheading">Gazeta Sporturilor</span>
+                        <span id="heading">Japonia uimește lumea! Ce secret poate avea în lupta cu coronavirusul? Takayuki: „Aşa am fost educaţi”</span>
+                        <span id="desc">Site-ul worldometers.info oferă în timp real cifrele pe care fiecare ţară le raportează oficial referitor la pandemia cu coronavirus: persoane infectate, decedaţi, recuperaţi, cei aflaţi în stare gravă.</span>
+                        <svg width="20" style="fill:#6E7780;stroke:#6E7780;stroke-width:0;vertical-align:bottom"
+                             height="20" viewBox="0 0 16 16" data-icon="comments">
+                            <path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                        <img src="5.jpg">
+                        <span id="subheading">www.digi24.ro</span>
+                        <span id="heading">Cât va dura criza coronavirusului? E posibilă o reinfectare? Ce spune un specialist epidemiolog din Timișoara </span>
+                        <span id="desc">Încălzirea vremii ar putea tempera evoluția coronavirusului, dar pandemia nu va dispărea. La începutul iernii viitoare am putea să ne confruntăm din nou cu un episod epidemic de Covid-19, spune conf. univ. dr. Emilian Damian Popovici, șeful catedrei de epidemiologie a Facultății de Medicină din Timișoara.</span>
+                        <svg width="20" style="fill:#6E7780;stroke:#6E7780;stroke-width:0;vertical-align:bottom"
+                             height="20" viewBox="0 0 16 16" data-icon="comments">
+                            <path d="M14.002 10c0 .735-.625 1.333-1.395 1.333h-8.58l-2.028 1.892-.002-9.892C1.998 2.598 2.623 2 3.392 2h9.215c.77 0 1.395.598 1.395 1.333V10zM3.392.667C1.887.667.667 1.86.667 3.334v11.333c0 .265.157.505.4.61.085.038.176.056.266.056.165 0 .328-.062.453-.18l2.765-2.486h8.058c1.505 0 2.726-1.194 2.726-2.667V3.333c0-1.473-1.22-2.667-2.726-2.667H3.393zm7.947 4H4.68c-.367 0-.666.298-.666.667S4.314 6 4.682 6h6.657c.367 0 .665-.298.665-.666s-.298-.667-.666-.667zM4.68 7.333c-.367 0-.666.298-.666.667s.298.667.666.667h6.657c.367 0 .665-.3.665-.667s-.298-.667-.666-.667H4.68z"></path>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="weather">
+            <div class="location">
+                <h4>Bistrita
+                <svg class="Cur(p)" width="18" style="fill:#5f5f5f;stroke:#5f5f5f;stroke-width:0;vertical-align:bottom"
+                     height="18" viewBox="0 0 48 48" data-icon="nav-local">
+                    <path d="M24.594.07C16.368.07 9.696 6.74 9.696 14.968c0 1.583.25 3.098.703 4.53l.003.007c.466 1.46 1.15 2.82 2.015 4.045l12.24 24.544L36.793 23.52c.878-1.242 1.562-2.616 2.028-4.094.44-1.408.68-2.905.68-4.453C39.498 6.74 32.824.07 24.595.07zm0 22.173c-4.132 0-7.486-3.35-7.486-7.483 0-4.138 3.352-7.486 7.486-7.486 4.133 0 7.49 3.348 7.49 7.486 0 4.134-3.354 7.483-7.49 7.483z"></path>
+                </svg>
+                </h4>
+            </div>
+            <div class="zile">
+                <div class="ziua">
+                    <span>Astazi</span>
+                    <img src="logo.png">
+                    <span>17°</span>
+                    <span style="color:#6e7780">2°</span>
+                </div>
+                <div class="ziua">
+                    <span>Sambata</span>
+                    <img src="logo.png">
+                    <span>16°</span>
+                    <span style="color:#6e7780">3°</span>
+                </div>
+                <div class="ziua">
+                    <span>Duminica</span>
+                    <img src="logo2.png">
+                    <span>12°</span>
+                    <span style="color:#6e7780">1°</span>
+                </div>
+                <div class="ziua">
+                    <span>Luni</span>
+                    <img src="logo3.png">
+                    <span>7°</span>
+                    <span style="color:#6e7780">3°</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</article>
+
+</body>
+</html>

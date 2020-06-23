@@ -1,0 +1,63 @@
+html {
+	height:100%;
+	width:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	border:0;
+	height:100%;
+	width:100%;
+}
+
+.back{
+	background:linear-gradient(rgba(171,233,208,1),rgba(221,227,176,1) 70%);
+	background:-moz-linear-gradient(rgba(171,233,208,1),rgba(221,227,176,1) 70%);
+	background:-webkit-linear-gradient(rgba(171,233,208,1),rgba(221,227,176,1) 70%);
+	background:-ms-linear-gradient(rgba(171,233,208,1),rgba(221,227,176,1) 70%);
+	background-image:linear-gradient(rgba(171,233,208,1),rgba(221,227,176,1) 70%);
+	width:100%;
+	height:100%;
+}
+
+.text{
+	height:300px;
+	width:300px;
+	position:absolute;
+	top:100px;
+	left:50px;
+	color:rgb(231,130,54);
+}
+
+.main{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:140px;
+	left:50%;
+}
+
+div.ball{
+	width:100px;
+	height:100px;
+	position:absolute;
+	background-color:rgba(100,54,100,0.8);
+	border-radius:100%;
+	transition-duration:5s;
+}
+
+
+
+.main:hover div.ball{
+	
+	animation-name:anime;
+	animation-duration:5s;
+	animation-iteration-count: 100;
+	animation-direction: alternate;
+}
+
+@keyframes anime {
+  from {top:0px;}
+  to {top: 400px;}
+}
+
